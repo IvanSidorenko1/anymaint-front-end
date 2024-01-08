@@ -1,0 +1,93 @@
+.btn-burger {
+   display: none;
+}
+@media (max-width: 800px) {
+   .btn-burger {
+      display: block;
+      cursor: pointer;
+      width: 10vh;
+      height: 20px;
+      position: relative;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+   }
+
+   .btn-burger::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(0deg);
+      -ms-transform: translate(-50%, -50%) rotate(0deg);
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 100%;
+      height: 2px;
+      background-color: #00c9b7;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+   }
+
+   .btn-burger::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(0deg);
+      -ms-transform: translate(-50%, -50%) rotate(0deg);
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 100%;
+      height: 2px;
+      background-color: #00c9b7;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+   }
+
+   .btn-burger._js--open-menu {
+      height: 40px;
+   }
+
+   .btn-burger._js--open-menu::before {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(25deg);
+      -ms-transform: translate(-50%, -50%) rotate(25deg);
+      transform: translate(-50%, -50%) rotate(25deg);
+      // background-color: #fe58a1;
+   }
+
+   .btn-burger._js--open-menu::after {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(-25deg);
+      -ms-transform: translate(-50%, -50%) rotate(-25deg);
+      transform: translate(-50%, -50%) rotate(-25deg);
+      // background-color: #fe58a1;
+   }
+
+   .btn-burger:hover::before,
+   .btn-burger:hover::after {
+      // background-color: #fe58a1;
+   }
+
+   .btn-burger {
+      width: 5vh;
+      height: 25px;
+   }
+
+   .btn-burger::before {
+      top: 5px;
+   }
+
+   .btn-burger::after {
+      top: unset;
+      bottom: 5px;
+   }
+   .btn-burger._js--open-menu {
+      height: 23px;
+   }
+}

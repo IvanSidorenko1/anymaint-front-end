@@ -1,0 +1,197 @@
+body._page-heb {
+   direction: rtl !important;
+   unicode-bidi: bidi-override !important;
+
+   .menu__btn-block {
+      margin: 0;
+      margin-right: 15px;
+   }
+   .menu__btn-block ._btn {
+      margin-left: 0;
+      margin-right: 15px;
+   }
+   .lang-link {
+      margin-left: 0;
+      margin-right: 10px;
+   }
+   .baner__content {
+      padding-left: 0;
+      margin-right: 0;
+      margin-left: auto;
+      padding-right: 7.5%;
+   }
+   .baner__title {
+      text-align: right;
+   }
+   .baner__text {
+      text-align: right;
+   }
+   .about__title {
+      text-align: right;
+   }
+   ._text {
+      text-align: right;
+   }
+   .about__media-fon {
+      left: unset;
+      right: 0;
+   }
+   .about__content {
+      padding-left: 0;
+      padding-right: 5%;
+   }
+   .about__media {
+      padding-left: 0;
+      padding-right: 5%;
+   }
+   /////////////////////////////
+   .right-panel__conteiner {
+      margin-right: 60%;
+      padding-right: 5%;
+      margin-left: 0;
+      padding-left: 0;
+   }
+   .left-panel__inner {
+      padding-right: 28%;
+      padding-left: 0;
+   }
+   ///////////////////////////////////
+   .reviews .owl-carousel .owl-nav button.owl-next::after {
+      background-image: url(../img/image/Arrow-l.svg);
+   }
+   .reviews .owl-carousel .owl-nav button.owl-prev::after {
+      background-image: url(../img/image/Arrow-r.svg);
+   }
+
+   .reviews__slide-text {
+      text-align: right;
+   }
+   .reviews__slide-media {
+      margin-right: 0;
+      margin-left: 15px;
+   }
+   .reviews__slide {
+      padding: 30px;
+      padding-left: 50px;
+      padding-right: 30px;
+   }
+   .reviews__slide::after {
+      right: unset;
+      left: 10%;
+   }
+   .advantages__baner-title {
+      text-align: right;
+   }
+   .blog__item--text,
+   .blog__item--title,
+   .blog__item--data {
+      text-align: right;
+   }
+   .footer-form__title {
+      text-align: right;
+   }
+   .footer-form__name {
+      text-align: right;
+   }
+   .contacts__titel {
+      text-align: right;
+   }
+   ///
+   ///
+   ///
+   .p-blog .p-blog__blog-text {
+      text-align: center;
+   }
+   .p-article__title {
+      text-align: right;
+   }
+   .p-article__text {
+      text-align: right;
+   }
+   ///
+   ///
+   .about::after {
+      border-right: unset;
+
+      border-left: 100vw solid #101d30;
+   }
+
+   .service::after {
+      border-left: unset;
+      border-right: 100vw solid #121c2e;
+   }
+   .advantages__text {
+      text-align: center;
+   }
+   ///
+   ///
+   ///
+   @media (max-width: 1700px) {
+      .reviews__slide {
+         // border-radius: 25px;
+         padding: 20px;
+         padding-right: 20px;
+         padding-left: 45px;
+      }
+   }
+   @media (max-width: 1500px) {
+      .reviews__slide {
+         // border-radius: 15px;
+         padding: 15px;
+         padding-right: 15px;
+         padding-left: 35px;
+      }
+   }
+   @media (max-width: 800px) {
+      .menu__btn-block ._btn {
+         margin-left: 0;
+         margin-right: 0;
+      }
+      .lang-link {
+         margin: 0 10px;
+      }
+      .menu__btn-block {
+         margin: 0;
+         margin-right: 0;
+      }
+      .baner__content {
+         padding-left: 0;
+         margin-right: 0;
+         margin-left: auto;
+         padding-right: 0;
+      }
+      .about__content {
+         padding-left: 0;
+         padding-right: 0;
+      }
+      .about__media {
+         padding-left: 0;
+         padding-right: 10%;
+      }
+      .left-panel__inner {
+         padding-right: 10%;
+         padding-left: 0;
+      }
+      .right-panel__conteiner {
+         margin-right: 10%;
+         padding-right: 0;
+         margin-left: 0;
+         padding-left: 0;
+      }
+      .reviews__slide {
+         border-radius: 25px;
+         padding: 25px;
+         padding-right: 25px;
+         padding-left: 40px;
+      }
+      .blog .owl-carousel .owl-nav button.owl-next::after {
+         background-image: url(../img/image/Arrow-l.svg);
+      }
+      .blog .owl-carousel .owl-nav button.owl-prev::after {
+         background-image: url(../img/image/Arrow-r.svg);
+      }
+      .contacts__titel {
+         text-align: center;
+      }
+   }
+}

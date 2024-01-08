@@ -1,0 +1,235 @@
+.choice {
+   .scrollmagic-pin-spacer {
+      inset: auto !important;
+      margin: 0px !important;
+      display: block !important;
+      position: relative !important;
+      box-sizing: content-box !important;
+      //  min-height: 960px;
+      //  height: 960px;
+      //  padding-top: 2500px !important;
+      padding-top: 0px !important;
+      padding-bottom: 1500px !important;
+   }
+}
+.choice__title {
+   margin-top: 10vh;
+   margin-bottom: -15vh;
+}
+section.areas {
+   height: 100vh;
+   position: relative;
+}
+
+.areas .left-panel__conteiner {
+   height: 100%;
+   width: 60%;
+   // padding: 100px 2% 20px 8%;
+   position: absolute;
+   z-index: 1;
+   display: flex;
+   align-items: center;
+   //background: #050b43;
+}
+
+.right-panel__conteiner img:hover {
+   transform: scale(1.1);
+}
+
+///////////////////////////////////////////////////////
+.pagination {
+   right: 2%;
+   top: 50%;
+   transform: translateY(-50%);
+   position: absolute;
+   z-index: 10;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.point-pagination {
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+
+   background: #101d30;
+
+   margin: 5px;
+   &.visible {
+      background: #00c9b7;
+   }
+}
+
+///////////////////////////////////////////////////////
+.left-panel__inner {
+   width: 100%;
+   height: 100%;
+   // padding: 70px 4% 20px 16%;
+   padding-left: 28%;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   z-index: 1;
+
+   transition: all 0.5s ease-in-out;
+}
+.areas .left-panel {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   // padding-top: 60px;
+   //overflow-y: auto;
+   display: flex;
+   align-items: center;
+}
+
+/* test */
+.left-panel__media {
+   width: 100%;
+   height: auto;
+   max-height: 80vh;
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+   }
+}
+
+////////////////////////////////////////////////////////////
+.--choice__2,
+.--choice__3 {
+   opacity: 0;
+   z-index: 0;
+}
+.left-panel__conteiner.choice__2,
+.left-panel__conteiner.choice__3 {
+   .left-panel__inner {
+      opacity: 0;
+   }
+}
+.left-panel__conteiner.choice__2 {
+   .--choice__2 {
+      z-index: 2;
+      opacity: 1;
+   }
+}
+.left-panel__conteiner.choice__3 {
+   .--choice__3 {
+      z-index: 2;
+      opacity: 1;
+   }
+}
+
+////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////
+
+#choice__1 {
+   transition: 0.5s;
+}
+
+#choice__1.invisible {
+   opacity: 0;
+   height: 0%;
+}
+
+#choice__2,
+#planning,
+#choice__3,
+#early {
+   opacity: 0;
+   height: 0%;
+   transition: 0.5s;
+}
+
+#choice__2.visible,
+#planning.visible,
+#choice__3.visible,
+#early.visible {
+   opacity: 1;
+   height: 100%;
+}
+
+/* img#choice__1 {
+   margin-left: 20%;
+ }
+ 
+ img#planning {
+   margin-left: 10%;
+ }
+ 
+ img#choice__5 {
+   margin-left: 25%;
+ } */
+/* end of test */
+.right-panel__conteiner {
+   height: 100%;
+   overflow: hidden;
+   width: 23.5%;
+   margin-left: 60%;
+
+   // padding-right: 10%;
+   padding-left: 5%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.right-panel__wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   height: 100%;
+}
+.right-panel__conteiner img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   display: block;
+}
+
+.right-panel__content {
+   text-align: left;
+}
+.right-panel__amount {
+   width: 54px;
+   height: 54px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background: #00c9b7;
+   border-radius: 50%;
+
+   font-family: "Open Sans";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 29px;
+   text-align: center;
+
+   color: #ffffff;
+
+   margin-bottom: 25px;
+}
+.right-panel__text {
+   font-size: 24px;
+}
+
+/////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////
+.anchor {
+   position: absolute;
+}
+
+.anchor-choice__1 {
+   top: 0;
+}
+
+.anchor-choice__2 {
+   top: 300px;
+}
